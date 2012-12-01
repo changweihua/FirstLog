@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<articleManagement name="日志管理">
+        <am id="write">
+            <icon>images/icons/write.gif</icon>
+            <name>写日志</name>
+            <url>WriteLog.aspx</url>
+        </am>
+        <am id="draft">
+            <icon></icon>
+            <name>草稿</name>
+            <url></url>
+        </am>
+        <am id="log">
+            <icon></icon>
+            <name>日志</name>
+            <url></url>
+        </am>
+        <am id="twitter">
+            <icon></icon>
+            <name>碎语</name>
+            <url></url>
+        </am>
+        <am id="tag">
+            <icon></icon>
+            <name>标签</name>
+            <url></url>
+        </am>
+        <am id="category">
+            <icon></icon>
+            <name>分类</name>
+            <url></url>
+        </am>
+        <am id="comment">
+            <icon></icon>
+            <name>评论</name>
+            <url></url>
+        </am>
+        <am id="quote">
+            <icon></icon>
+            <name>引用</name>
+            <url></url>
+        </am>
+	</articleManagement>
+	<siteManagement name="站点管理">
+        <sm id="widget">
+            <icon></icon>
+            <name>Widgets</name>
+            <url></url>
+        </sm>
+        <sm id="page">
+            <icon></icon>
+            <name>页面</name>
+            <url></url>
+        </sm>
+        <sm id="link">
+            <icon></icon>
+            <name>链接</name>
+            <url></url>
+        </sm>
+        <sm id="user">
+            <icon>images/icons/user.gif</icon>
+            <name>用户</name>
+            <url></url>
+        </sm>
+        <sm id="data">
+            <icon></icon>
+            <name>数据</name>
+            <url></url>
+        </sm>
+	</siteManagement>
+	<featureManagement name="功能拓展">
+        <fm id="plugin">
+            <icon></icon>
+            <name>插件</name>
+            <url></url>
+        </fm>
+	</featureManagement>
+</system>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<article>
+		<write url="">写日志</write>
+		<draft url="">草稿</draft>
+		<log url="">日志</log>
+		<twitter url="">碎语</twitter>
+		<tag url="">标签</tag>
+		<category url="">分类</category>
+		<comment url="">评论</comment>
+		<quote url="">引用</quote>
+	</article>
+	<site>
+		<widget url="">Widgets</widget>
+		<page url="">页面</page>
+		<link url="">用户</link>
+		<data url="">数据</data>
+	</site>
+	<feature>
+		<plugin url="">插件</plugin>
+		<plugin url="">插件</plugin>
+	</feature>
+</system>

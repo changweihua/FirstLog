@@ -1,0 +1,13 @@
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogBBL.dll
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogBBL.pdb
+E:\Peojects\FirstClog\FirstClogBBL\obj\Debug\ResolveAssemblyReference.cache
+E:\Peojects\FirstClog\FirstClogBBL\obj\Debug\FirstClogBBL.dll
+E:\Peojects\FirstClog\FirstClogBBL\obj\Debug\FirstClogBBL.pdb
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogIDAL.dll
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogModel.dll
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\SQLServer.dll
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogDBUtility.dll
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogIDAL.pdb
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogModel.pdb
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\SQLServer.pdb
+E:\Peojects\FirstClog\FirstClogBBL\bin\Debug\FirstClogDBUtility.pdb

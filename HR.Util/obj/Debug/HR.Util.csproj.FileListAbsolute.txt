@@ -1,0 +1,10 @@
+E:\ACCP6\Projects\HR\HR.Util\bin\Debug\HR.Util.dll
+E:\ACCP6\Projects\HR\HR.Util\bin\Debug\HR.Util.pdb
+E:\ACCP6\Projects\HR\HR.Util\obj\Debug\ResolveAssemblyReference.cache
+E:\ACCP6\Projects\HR\HR.Util\obj\Debug\HR.Util.dll
+E:\ACCP6\Projects\HR\HR.Util\obj\Debug\HR.Util.pdb
+E:\ACCP\HR\HR.Util\bin\Debug\HR.Util.dll
+E:\ACCP\HR\HR.Util\bin\Debug\HR.Util.pdb
+E:\ACCP\HR\HR.Util\obj\Debug\ResolveAssemblyReference.cache
+E:\ACCP\HR\HR.Util\obj\Debug\HR.Util.dll
+E:\ACCP\HR\HR.Util\obj\Debug\HR.Util.pdb

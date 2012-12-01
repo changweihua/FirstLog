@@ -1,0 +1,5 @@
+E:\Peojects\FirstClog\FirstClogDBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\Peojects\FirstClog\FirstClogDBUtility\bin\Debug\FirstClogDBUtility.dll
+E:\Peojects\FirstClog\FirstClogDBUtility\bin\Debug\FirstClogDBUtility.pdb
+E:\Peojects\FirstClog\FirstClogDBUtility\obj\Debug\FirstClogDBUtility.dll
+E:\Peojects\FirstClog\FirstClogDBUtility\obj\Debug\FirstClogDBUtility.pdb

@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminPage.master.cs" Inherits="admin_AdminPage" %>
+
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <title></title>
+        <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+        <style type="text/css">
+            *
+            {
+                margin:0;
+                padding:0;
+            }
+            #main
+            {
+                width:80%; 
+                margin:0px auto;
+            }
+            #header
+            {
+                position:absolute;
+                top:5px;
+                left:0px;
+                height:50px;
+            }
+            .clear
+            {
+                clear:both;
+                height:5px;
+                width:100%;
+            }
+            #content
+            {
+                position:absolute;
+                top:55px;
+                width:1000px;
+            }
+            .content_left
+            {
+                width:250px;
+                margin-left:20px;
+                float:left;
+            }
+            .content_right
+            {
+                width:650px;
+                float:left;
+                margin:0 20px 0 0;
+            }
+            #footer
+            {
+                position:fixed;
+                bottom:5px;
+            
+            }
+            a
+            {
+                text-decoration:none;
+            }
+            .content_left dl
+            {
+                text-align:center;
+                width:50%;
+                border-radius:5px;
+                -ms-border-radius:5px;
+                border:2px solid Gray;
+                padding:5px;
+            }
+            .content_left dt
+            {
+                background-color:#5C5B5C;
+                color:White;
+                padding:5px;
+                cursor:pointer;
+            }
+           .content_left dd
+            {
+                background-color:#F4F4F4;    
+                border:2px solid inherit;
+                margin:3px;   
+                padding:3px;   
+                background-repeat:no-repeat;
+                background-position:4px;   
+            }
+        </style>
+        <script type="text/javascript">
+            
+            function init(){
+                //关闭Ajax缓存
+		        $.ajaxSetup ({
+			        cache: false 
+		        });
+            }
+
+            function print(xml, target, p_attr, c, c_attr1, c_attr2, c_attr3) {
+                var $target = $('#' + target);
+                var count = $(xml).find(c).size();
+                $target.append('<dt id="' + c + '">' + $(xml).find(c).parent().attr(p_attr) + '</dt>');
+                for (var i = 0; i < count; i++) {
+                    var node = $(xml).find(c).eq(i);
+                    var $text = '<dd style="backgound:url(' + node.find(c_attr3).text() + ')" id="' + c + i + '"><a href="' + node.find(c_attr1).text() + '">' + node.find(c_attr2).text() + '</a></dd>';
+                    $target.append($text);
+                }
+            }
+
+            $(function () {
+
+                init();
+
+                //读取管理列表
+                $.ajax({
+                    url: 'systemSetting.xml',
+                    dataType: 'xml',
+                    type: 'get',
+                    success: function (xml) {
+                        print(xml, 'dl1', 'name', 'am', 'url', 'name', 'icon');
+                        print(xml, 'dl1', 'name', 'sm', 'url', 'name', 'icon');
+                        print(xml, 'dl1', 'name', 'fm', 'url', 'name', 'icon');
+                    },
+                    error: function (data, type) {
+                        alert('读取数据失败，错误状态码 ' + data.status);
+                    }
+                });
+
+                //绑定dt单击事件，展开或关闭
+                $('#dl1 dt').live('click', function () {
+                    var id = $(this).attr('id');
+                    $(this).siblings('dd[id^="' + id + '"]').animate({ height: 'toggle', opacity: 'toggle' });
+                });
+            });
+        </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<div id="main">
+    <div id="header">头部</div>
+    <div class="clear"></div>
+    <div id="content">
+        <div class="content_left">
+            <dl id="dl1">
+               
+            </dl>
+        </div>
+        <div class="content_right">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                内容页
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">版权所有</div>
+</div>
+</body>
+</html>
